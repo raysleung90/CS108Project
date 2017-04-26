@@ -34,6 +34,7 @@ vertSpd = 0;
 jumpSpd = 14;
 moveSpd = 6;
 hp = 4;
+image_angle = 0;
 </string>
           </argument>
         </arguments>
@@ -99,6 +100,10 @@ key_jump = keyboard_check_pressed(vk_up);
 //React to player input.
 move = key_left + key_right; //Move left if only left is pressed and vice versa.
 horizSpd = move * moveSpd;
+
+if keyboard_check(vk_left) image_xscale = -1;
+if keyboard_check(vk_right) image_xscale = 1;
+
 if(vertSpd &lt; 15) vertSpd += grav;
 
 if(place_meeting(x,y + 1, objGroundPlcHldr)) //Check collision with floor.
