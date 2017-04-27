@@ -19,13 +19,16 @@
     <sprite>sprites\sprPortalPlcHldr</sprite>
     <sprite>sprites\sprRockPlcHldr</sprite>
     <sprite>sprites\sprMovingPlatform</sprite>
+    <sprite>sprites\sprMovingPlatform2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_sky</background>
     <background>background\bg_tutorial</background>
     <background>background\bg_end</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path_Controls_room</path>
+  </paths>
   <objects name="objects">
     <object>objects\objPlayerPlcHldr</object>
     <object>objects\objGroundPlcHldr</object>
@@ -38,6 +41,7 @@
     <object>objects\objRockSpawner</object>
     <object>objects\objFallingRock</object>
     <object>objects\objMovingPlatform</object>
+    <object>objects\objMovingPlatform2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Controls</room>
