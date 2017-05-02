@@ -27,13 +27,12 @@
             <kind>1</kind>
             <string>///Initialize Variables.
 sprite_index = -1;
-//moveSpd = 3;
-/*
+
 //Based on tutorial code from Shaun Spalding.
 dir = -1;
 horizSpd = 0;
 moveSpd = 3;
-*/
+
 </string>
           </argument>
         </arguments>
@@ -91,7 +90,6 @@ moveSpd = 3;
             <string>///One-way platform.
 mask_index = sprMovingPlatform;
 /*
-horizSpd = dir * moveSpd;
 //Horizontal collision detection.
 if(place_meeting(x + horizSpd, y, objGroundPlcHldr))
 {
@@ -105,6 +103,15 @@ if(place_meeting(x + horizSpd, y, objGroundPlcHldr))
 x += horizSpd;
 */
 
+
+/*
+//Reverse direction of platform at path's end.
+if(path_endaction == path_action_restart){
+    dir *= -1;
+}*/
+
+horizSpd = dir * moveSpd;
+
 //Player can jump up through platform and land on top of it.
 if(instance_exists(objPlayerPlcHldr)){
     if(round(objPlayerPlcHldr.y + (objPlayerPlcHldr.sprite_height/2) &gt; y+1)){
@@ -112,11 +119,35 @@ if(instance_exists(objPlayerPlcHldr)){
     }
     else{
         mask_index = sprMovingPlatform;
-//        if(place_meeting(x, y-1, objPlayerPlcHldr)){
-//            objPlayerPlcHldr.horizSpd_carry = path_speed;
-//        }
+        if(place_meeting(x, y-1, objPlayerPlcHldr)){
+//            objPlayerPlcHldr.horizSpd_carry = sign(path_speed)*path_speed;
+            objPlayerPlcHldr.horizSpd_carry = horizSpd;
+        }
     }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="8">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>dir *= -1;
 </string>
           </argument>
         </arguments>
@@ -139,7 +170,8 @@ if(instance_exists(objPlayerPlcHldr)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(sprMovingPlatform,0,x,y);
+            <string>///Draw Sprite.
+draw_sprite(sprMovingPlatform,0,x,y);
 </string>
           </argument>
         </arguments>
