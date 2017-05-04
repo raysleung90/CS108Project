@@ -28,7 +28,7 @@
             <string>///Bullet direction and speed.
 //Bullet shoots left or right if player faces
 //in those respective directions.
-direction = 90 + 90 * -objPlayerPlcHldr.image_xscale;
+direction = 90 + 90 * -objPlayer.image_xscale;
 image_angle = direction;
 speed = 10;
 </string>

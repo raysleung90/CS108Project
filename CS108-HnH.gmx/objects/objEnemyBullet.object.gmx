@@ -34,7 +34,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objPlayerPlcHldr">
+    <event eventtype="4" ename="objPlayer">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -68,7 +68,7 @@ instance_destroy();
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>objPlayerPlcHldr</whoName>
+        <whoName>objPlayer</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
