@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>objGroundPlcHldr</parentName>
+  <parentName>objCollision</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -91,9 +91,9 @@ moveSpd = 3;
 mask_index = sprMovingPlatform;
 /*
 //Horizontal collision detection.
-if(place_meeting(x + horizSpd, y, objGroundPlcHldr))
+if(place_meeting(x + horizSpd, y, objCollision))
 {
-    while(!place_meeting(x + sign(horizSpd), y, objGroundPlcHldr))
+    while(!place_meeting(x + sign(horizSpd), y, objCollision))
     {
         x += sign(horizSpd);
     }
@@ -110,18 +110,19 @@ if(path_endaction == path_action_restart){
     dir *= -1;
 }*/
 
-horizSpd = dir * moveSpd;
+//horizSpd = dir * moveSpd;
 
+horizSpd = x - xprevious;
 //Player can jump up through platform and land on top of it.
-if(instance_exists(objPlayerPlcHldr)){
-    if(round(objPlayerPlcHldr.y + (objPlayerPlcHldr.sprite_height/2) &gt; y+1)){
+if(instance_exists(objPlayer)){
+    if(round(objPlayer.y + (objPlayer.sprite_height/2) &gt; y+1)){
         mask_index = -1;
     }
     else{
         mask_index = sprMovingPlatform;
-        if(place_meeting(x, y-1, objPlayerPlcHldr)){
-//            objPlayerPlcHldr.horizSpd_carry = sign(path_speed)*path_speed;
-            objPlayerPlcHldr.horizSpd_carry = horizSpd;
+        if(place_meeting(x, y-1, objPlayer)){
+//            objPlayer.horizSpd_carry = sign(path_speed)*path_speed;
+            objPlayer.horizSpd_carry = horizSpd;
         }
     }
 }

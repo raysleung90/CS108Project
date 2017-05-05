@@ -19,7 +19,7 @@
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>objPlayerPlcHldr</whoName>
+        <whoName>objPlayer</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -52,9 +52,9 @@ draw_healthbar(20, 20, 120, 40, percentHP, c_black,
           <argument>
             <kind>1</kind>
             <string>///Enemy HP Bar
-maxHP = 4;
+maxLife = objEnemy.maxHP;
 
-percentHP = (hp/maxHP)*100;
+percentHP = (hp/maxLife)*100;
 
 draw_healthbar(780, 40, 660, 20, percentHP, c_black,
         c_black, c_red, 0, true, true);

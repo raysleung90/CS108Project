@@ -20,6 +20,8 @@
     <sprite>sprites\sprRockPlcHldr</sprite>
     <sprite>sprites\sprMovingPlatform</sprite>
     <sprite>sprites\sprMovingPlatform2</sprite>
+    <sprite>sprites\sprCollision</sprite>
+    <sprite>sprites\sprRock</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_sky</background>
@@ -27,21 +29,37 @@
     <background>background\bg_end</background>
   </backgrounds>
   <paths name="paths">
-    <path>paths\path_Controls_room</path>
+    <paths name="Control Room">
+      <path>paths\path_Controls_room</path>
+    </paths>
+    <paths name="Level 1">
+      <path>paths\path1</path>
+    </paths>
+    <paths name="Level 2">
+      <path>paths\path2</path>
+    </paths>
   </paths>
   <objects name="objects">
-    <object>objects\objPlayerPlcHldr</object>
-    <object>objects\objGroundPlcHldr</object>
-    <object>objects\objEnemy</object>
-    <object>objects\objBGM</object>
-    <object>objects\objEnemyBullet</object>
-    <object>objects\objPlayerBullet</object>
-    <object>objects\objControl</object>
-    <object>objects\objPortal</object>
-    <object>objects\objRockSpawner</object>
-    <object>objects\objFallingRock</object>
-    <object>objects\objMovingPlatform</object>
-    <object>objects\objMovingPlatform2</object>
+    <objects name="Player-Enemy-Etc">
+      <object>objects\objPlayer</object>
+      <object>objects\objPlayerBullet</object>
+      <object>objects\objEnemyBullet</object>
+      <object>objects\objEnemy</object>
+    </objects>
+    <objects name="Room Objects">
+      <object>objects\objGround</object>
+      <object>objects\objFallingRock</object>
+      <object>objects\objPortal</object>
+      <object>objects\objWall</object>
+    </objects>
+    <objects name="System">
+      <object>objects\objBGM</object>
+      <object>objects\objMovingPlatform</object>
+      <object>objects\objMovingPlatform2</object>
+      <object>objects\objControl</object>
+      <object>objects\objRockSpawner</object>
+      <object>objects\objCollision</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Controls</room>
