@@ -30,7 +30,7 @@
 //in those respective directions.
 direction = 90 + 90 * -objPlayer.image_xscale;
 image_angle = direction;
-speed = 10;
+speed = 14;
 </string>
           </argument>
         </arguments>

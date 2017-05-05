@@ -29,8 +29,15 @@
     <background>background\bg_end</background>
   </backgrounds>
   <paths name="paths">
-    <path>paths\path_Controls_room</path>
-    <path>paths\path1</path>
+    <paths name="Control Room">
+      <path>paths\path_Controls_room</path>
+    </paths>
+    <paths name="Level 1">
+      <path>paths\path1</path>
+    </paths>
+    <paths name="Level 2">
+      <path>paths\path2</path>
+    </paths>
   </paths>
   <objects name="objects">
     <objects name="Player-Enemy-Etc">
