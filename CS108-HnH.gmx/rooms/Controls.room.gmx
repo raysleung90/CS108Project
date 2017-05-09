@@ -94,7 +94,7 @@
     <instance objName="objGroundPlcHldr" x="32" y="384" name="inst_769F73D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGroundPlcHldr" x="64" y="384" name="inst_915CC0A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPortal" x="768" y="480" name="inst_023FAF1F" locked="0" code="" scaleX="1.58620691299438" scaleY="1.56666672229767" colour="4294967295" rotation="0"/>
-    <instance objName="objMovingPlatform" x="400" y="416" name="inst_6EBEF18A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMovingPlatform2" x="400" y="416" name="inst_A77B3FFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
