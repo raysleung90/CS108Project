@@ -38,6 +38,10 @@
     <paths name="Level 2">
       <path>paths\path2</path>
     </paths>
+    <paths name="Level 3">
+      <path>paths\path_left_to_right</path>
+      <path>paths\path_right_to_left</path>
+    </paths>
   </paths>
   <objects name="objects">
     <objects name="Player-Enemy-Etc">

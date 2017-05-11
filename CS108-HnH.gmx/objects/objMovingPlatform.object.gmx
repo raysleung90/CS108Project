@@ -110,9 +110,9 @@ if(path_endaction == path_action_restart){
     dir *= -1;
 }*/
 
-//horizSpd = dir * moveSpd;
+horizSpd = dir * moveSpd;
+//horizSpd = x - xprevious;
 
-horizSpd = x - xprevious;
 //Player can jump up through platform and land on top of it.
 if(instance_exists(objPlayer)){
     if(round(objPlayer.y + (objPlayer.sprite_height/2) &gt; y+1)){
@@ -121,8 +121,8 @@ if(instance_exists(objPlayer)){
     else{
         mask_index = sprMovingPlatform;
         if(place_meeting(x, y-1, objPlayer)){
-//            objPlayer.horizSpd_carry = sign(path_speed)*path_speed;
-            objPlayer.horizSpd_carry = horizSpd;
+            objPlayer.horizSpd_carry = sign(path_speed)*path_speed;
+//            objPlayer.horizSpd_carry = horizSpd;
         }
     }
 }
