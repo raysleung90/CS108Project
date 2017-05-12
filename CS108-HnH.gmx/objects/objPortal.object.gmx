@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>///Move Player To Next Room.
-//room_goto_next();
-room_goto(level3);
+room_goto_next();
+//room_goto(level3);
 </string>
           </argument>
         </arguments>

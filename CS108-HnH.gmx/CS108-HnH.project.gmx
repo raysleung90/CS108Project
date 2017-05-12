@@ -39,8 +39,7 @@
       <path>paths\path2</path>
     </paths>
     <paths name="Level 3">
-      <path>paths\path_left_to_right</path>
-      <path>paths\path_right_to_left</path>
+      <path>paths\path5</path>
     </paths>
   </paths>
   <objects name="objects">
@@ -63,6 +62,8 @@
       <object>objects\objControl</object>
       <object>objects\objRockSpawner</object>
       <object>objects\objCollision</object>
+      <object>objects\objPlatform1Spawner</object>
+      <object>objects\objPlatform2Spawner</object>
     </objects>
   </objects>
   <rooms name="rooms">
