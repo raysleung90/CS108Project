@@ -34,7 +34,7 @@ horizSpd_final = 0;
 vertSpd = 0;
 jumpSpd = 14;
 moveSpd = 6;
-hp = 5;
+hp = 4;
 dirAngle = 0;
 </string>
           </argument>
