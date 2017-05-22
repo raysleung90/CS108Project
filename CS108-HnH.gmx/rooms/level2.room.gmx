@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objPlayer" x="352" y="512" name="inst_A7BA933A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayer" x="352" y="544" name="inst_A7BA933A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGround" x="32" y="576" name="inst_620E447C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGround" x="64" y="576" name="inst_13B70B49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGround" x="96" y="576" name="inst_4CA7A172" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -76,7 +76,7 @@
     <instance objName="objGround" x="704" y="576" name="inst_1519B257" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGround" x="736" y="576" name="inst_2D6119F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGround" x="768" y="576" name="inst_1D9D760F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objEnemy" x="96" y="160" name="inst_2759A977" locked="0" code="path_start(path2, 5, path_action_restart, 0);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnemy" x="96" y="160" name="inst_2759A977" locked="0" code="path_start(path2, 5, path_action_restart, 0);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objControl" x="64" y="0" name="inst_41486E94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBGM" x="32" y="0" name="inst_30EFBC80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="0" y="32" name="inst_8C4BDD8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

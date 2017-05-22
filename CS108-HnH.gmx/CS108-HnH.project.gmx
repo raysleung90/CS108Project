@@ -11,22 +11,25 @@
     <sound>sound\snd_shoot</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\sprPlayerPlcHldr</sprite>
-    <sprite>sprites\sprGroundPlcHldr</sprite>
-    <sprite>sprites\sprEnemyPlcHldr</sprite>
+    <sprite>sprites\sprPlayer</sprite>
+    <sprite>sprites\sprGround</sprite>
+    <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprEnemyBullet</sprite>
     <sprite>sprites\sprPlayerBullet</sprite>
-    <sprite>sprites\sprPortalPlcHldr</sprite>
-    <sprite>sprites\sprRockPlcHldr</sprite>
+    <sprite>sprites\sprPortal</sprite>
+    <sprite>sprites\sprBoulder</sprite>
     <sprite>sprites\sprMovingPlatform</sprite>
     <sprite>sprites\sprMovingPlatform2</sprite>
     <sprite>sprites\sprCollision</sprite>
     <sprite>sprites\sprRock</sprite>
+    <sprite>sprites\sprJmpUpgrd</sprite>
+    <sprite>sprites\sprPlayerBulletUpgrade</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_sky</background>
     <background>background\bg_tutorial</background>
     <background>background\bg_end</background>
+    <background>background\bg_Upgrade</background>
   </backgrounds>
   <paths name="paths">
     <paths name="Control Room">
@@ -46,6 +49,7 @@
     <objects name="Player-Enemy-Etc">
       <object>objects\objPlayer</object>
       <object>objects\objPlayerBullet</object>
+      <object>objects\objPlayerBulletUpgrade</object>
       <object>objects\objEnemyBullet</object>
       <object>objects\objEnemy</object>
     </objects>
@@ -64,14 +68,19 @@
       <object>objects\objCollision</object>
       <object>objects\objPlatform1Spawner</object>
       <object>objects\objPlatform2Spawner</object>
+      <object>objects\objJmpUpgrd</object>
+      <object>objects\objGameStart</object>
+      <object>objects\objBulletUpgrd</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Intro</room>
     <room>rooms\Controls</room>
     <room>rooms\level1</room>
     <room>rooms\level2</room>
     <room>rooms\level3</room>
     <room>rooms\End</room>
+    <room>rooms\Upgrades</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
